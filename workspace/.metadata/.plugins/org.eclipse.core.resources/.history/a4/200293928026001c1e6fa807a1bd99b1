@@ -1,0 +1,15 @@
+package member.model.service;
+
+import member.model.vo.Member;
+
+public class MemberService {
+
+	public Member loginMember(String userId, String userPwd) {
+		
+		Connection conn = getConnection();
+		return null;
+		
+		
+	}
+
+}

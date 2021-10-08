@@ -1,0 +1,22 @@
+package member.model.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import member.model.vo.Member;
+
+public class MemberDao {
+
+	public Member loginMember(Connection conn, String userId, String userPwd) {
+		Member loginUser = null;
+		PreparedStatement pstmt = null;
+		ResultSet rset = null;
+		
+		
+		
+		return loginUser;
+	}
+	
+	
+
+}

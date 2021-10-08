@@ -1,0 +1,63 @@
+package com.kh.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class TestServlet2
+ */
+@WebServlet("/test2")
+public class TestServlet2 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public TestServlet2() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("doGet 호출");
+		
+		// 1. 요청 값에 포함 된 데이터 추출
+		String name = request.getParameter("name");
+		String gender = request.getParameter("gender");
+		String age = request.getParameter("age");
+		String city = request.getParameter("city");
+		String height = request.getParameter("height");
+		String[] foodArr =request.getParameterValues("food");
+		
+		
+		// 사용자 요청 값 추출 결과 확인
+		System.out.println("name : "+name);
+		System.out.println("gender : "+gender);
+		System.out.println("age : "+age);
+		System.out.println("city : "+city);
+		System.out.println("height : "+height);
+		
+		// 체크 박스 미체크시 foodArr 배열은 null (NullPointerException 방지를 위해 조건문)
+		if(foodArr != null) {
+			for(int i = 0 ; i < foodArr.length; i++) {
+				System.out.println("foodArr["+i+"] : "+foodArr[i]);
+			}
+		}
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("doPost 호출");
+		doGet(request, response);
+	}
+
+}

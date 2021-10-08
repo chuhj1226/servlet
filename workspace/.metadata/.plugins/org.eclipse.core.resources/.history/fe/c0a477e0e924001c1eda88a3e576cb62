@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>1_Servlet</title>
+</head>
+<body>
+	<h1>어서와 Web은 처음이지?</h1>
+	
+	<!-- 
+	
+		환경 설정
+		1) tomcat 설치 (dev 폴더에 압축 풀기)
+		2) Eclipse의 Server Runtime Environments에서 tomcat 설치 경로 등록 (이클립스에 서버 연동)
+		3) Servers 탭에서 서버 등록
+	 -->
+	 
+	
+</body>
+</html>

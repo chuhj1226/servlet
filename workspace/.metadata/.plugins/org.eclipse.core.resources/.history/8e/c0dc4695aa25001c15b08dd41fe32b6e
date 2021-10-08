@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	h2 { color : red;}
+	span.name { color : orange; font-weight: bold;}
+	span.gender { color : yellow; font-weight: bold;}
+	span.age { color : green; font-weight: bold;}
+	span.city { color : blue; font-weight: bold;}
+	span.height { color : navy; font-weight: bold;}
+	span.food { color : purple; font-weight: bold;}
+</style>
+</head>
+<body>
+	<h2>개인 정보 결과 (Servlet+JSP)</h2>
+	<span class='name'></span>
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>

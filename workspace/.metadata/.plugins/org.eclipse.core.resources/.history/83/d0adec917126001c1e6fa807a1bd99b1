@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>menubar</title>
+</head>
+<body>
+<div class="wrapper">
+	<header id="header">
+		<!-- 로고 이미지를 클릭하면 첫 화면으로 -->
+		<a href="<%= request.getContextPath() %>">
+		<%-- request.getContextPath() => jsp --%>
+			<img class="logo" src="<%= request.getContextPath() %>/resources/images/logo.jpg">
+		</a>
+		<div class="btnArea">
+			<a href="#">회원가입</a>
+		</div>
+	</header>
+</div>
+
+</body>
+</html>

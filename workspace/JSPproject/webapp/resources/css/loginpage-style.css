@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+.outer {
+	width: 40%;
+	min-width: 400px;
+	height: 600px;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	margin: 70px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loginArea h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.input_area {
+	border: solid 1px #dadada;
+	padding: 10px 10px 14px 10px;
+	background: white;
+}
+
+
+.input_area input {
+	width: 250px;
+	height: 30px;
+	border: 0px;
+}
+
+.input_area input:focus {
+	outline: none;
+}
+
+
+.input_area:last-child {
+	background:#282A35;
+	border: 0px;
+}
+
+.input_area input[type=submit] {
+	color:white;
+	background:#282A35;
+	cursor : pointer;
+}
+
+

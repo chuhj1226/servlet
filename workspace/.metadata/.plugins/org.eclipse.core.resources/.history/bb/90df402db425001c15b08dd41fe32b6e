@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>01_sum</title>
+</head>
+<body>
+	<!-- HTML 주석 -->
+	<%-- JSP 주석 --%>
+
+	<!-- HTML 주석은 클라이언트에게 전달 됨 -->
+	<%-- JSP 주석은 클라이언트에게 전달 안됨 --%>
+	
+	<%
+		// 스크립틀릿 -> 자바 코드 작성
+		int sum = 0;
+		
+		for(int i = 1 ; i <= 100; i++){
+			sum += i;
+		}
+		
+		System.out.println();
+	%>
+</body>
+</html>

@@ -1,0 +1,18 @@
+package common;
+
+import java.sql.Connection;
+import java.util.Properties;
+
+public class JDBCTemplate {
+	
+	public static Connection getConnection() {
+		Properties driver = new Properties();
+		String fileName = JDBCTemplate.class.getResource("/sql/driver.properties").getPath();
+		
+		// System.out.println(fileName);
+		driver.load(new FileReader(fileName));
+		
+		return null;
+	}
+
+}

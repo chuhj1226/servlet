@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>login</title>
+</head>
+<body>
+	<!-- 모든 페이지에 include할 menubar.jsp -->
+	<%@ include file="/WEB-INF/views/common/menubar.jsp"%>
+	
+	<div class="wrapper">
+		<div class="outer">
+			<form class="loginArea">
+				<h1>로그인</h1>
+				<h4>아이디</h4>
+				<span class="input_area">
+					<input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요" required>
+					
+				</span>
+				
+			</form>
+		</div>
+	</div>
+	
+	
+</body>
+</html>

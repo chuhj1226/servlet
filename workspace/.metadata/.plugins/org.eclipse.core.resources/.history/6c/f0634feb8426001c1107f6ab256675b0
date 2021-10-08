@@ -1,0 +1,22 @@
+package member.model.service;
+
+import java.sql.Connection;
+import static common.JDBCTemplate.getConnection;
+
+import member.model.dao.MemberDao;
+import member.model.vo.Member;
+
+public class MemberService {
+	
+	private MemberDao memberDao = new MemberDao();
+
+	public Member loginMember(String userId, String userPwd) {
+		// JDBCTemplate의 getConnection 작성
+		Connection conn = getConnection();
+		// System.out.println(conn);
+		return null;
+		
+		
+	}
+
+}

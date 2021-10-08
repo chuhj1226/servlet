@@ -1,0 +1,35 @@
+package common;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.sql.Connection;
+import java.util.Properties;
+
+public class JDBCTemplate {
+	
+	public static Connection getConnection() {
+		Connection conn = null;
+		Properties driver = new Properties();
+		
+		String fileName = JDBCTemplate.class.getResource("/sql/driver.properties").getPath();
+		
+		// System.out.println(fileName);
+		try {
+			driver.load(new FileReader(fileName));
+			
+			// 1. OracleDriver 등록
+			Class.forName(driver.getProperty("driver"));
+			
+			// 2. DBMS와 연결
+			
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		return null;
+	}
+
+}

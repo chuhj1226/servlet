@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.wrapper {
+	min-width : 800px;
+}
+
+#header {
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+#header .btnArea {
+	display:flex;
+	margin-right : 20px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#header a {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight : bold;
+	text-decoration:none;
+	display:block;
+	margin : 10px;
+	color:#282A35;
+	width : 100px;
+	text-align : center;
+}
+
+#header a:hover {
+	cursor: pointer;
+}
+
+
+#nav {
+	background: #282A35;
+	height: 50px;
+}
+
+#nav ul {
+	width: 700px;
+	line-height : 50px;
+	margin : 0 auto;
+	display: flex;
+	justify-content: space-around; 
+	list-style: none;
+}
+
+#nav a {
+	text-decoration:none;
+	color : white;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight : bold;
+	display:block;
+	width : 150px;
+	text-align : center;
+}

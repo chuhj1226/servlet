@@ -1,0 +1,19 @@
+package member.model.dao;
+
+import java.sql.Connection;
+
+import member.model.vo.Member;
+
+public class MemberDao {
+
+	public Member loginMember(Connection conn, String userId, String userPwd) {
+		Member loginUser = null;
+		
+		
+		
+		return null;
+	}
+	
+	
+
+}

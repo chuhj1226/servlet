@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>1_Servlet</title>
+</head>
+<body>
+	<h1>어서와 Web은 처음이지?</h1>
+	
+	<!-- 
+	
+		환경 설정
+		1) tomcat 설치 (dev 폴더에 압축 풀기)
+		2) Eclipse의 Server Runtime Environments에서 tomcat 설치 경로 등록 (이클립스에 서버 연동)
+		3) Servers 탭에서 서버 등록 (톰캣 기본 포트와 오라클 기본 포트가 동일하게 8080이므로 변경, server publicshing 체크)
+		4) 인코딩 설정(UTF-8)
+		5) 기타(java-ee, 파일 바로가기 생성)
+		
+		* Dynamic Web Project 만들기
+		1) Project name : 프로젝트 이름
+		2) Target runtime : 웹 어플리케이션을 실행할 서버
+		3) Dynamic web module version : 서블릿 버전, 이클립스는 여기에 지정 된 버전으로 소스 코드의 문법을 검사
+		4) Source folders on build path : 자바 소스 폳러
+	 -->
+	 
+	
+</body>
+</html>

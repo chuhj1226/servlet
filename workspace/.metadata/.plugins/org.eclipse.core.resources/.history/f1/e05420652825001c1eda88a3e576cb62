@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>인덱스</title>
+</head>
+<body>
+
+	<!-- /context Root/mapping 명칭 -->
+	<form action="/study/study1" method="get">
+		<button type="submit">요청</button>
+	</form>
+	
+	<h3><a href="views/servlet.html">Servlet-GET 방식</a></h3>
+	<h3><a href="views/testServlet2.html">Servlet-POST 방식</a></h3>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+INDEX VERSION 1.131
+C:\Users\calls\OneDrive\¹ÙÅÁ È­¸é\KHÁ¤º¸±³À°¿ø\Server\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4110950924.index
+\JSPproject\src
+C:\Users\calls\OneDrive\¹ÙÅÁ È­¸é\KHÁ¤º¸±³À°¿ø\Server\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1610655781.index
+\JSPproject\src
+C:\Users\calls\OneDrive\¹ÙÅÁ È­¸é\KHÁ¤º¸±³À°¿ø\Server\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1231995540.index
+\JSPproject\src
+C:\Server\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3070379726.index
+\2_JSP\src
+C:\Server\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3228728295.index
+\study3\src
+C:\Server\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4110950924.index
+\JSPproject\src
+C:\Server\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3890329184.index
+\study3\src
+C:\Server\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\472430904.index
+\JSPproject\src
+C:\Server\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1927887945.index
+\study3\src
+C:\Users\calls\OneDrive\¹ÙÅÁ È­¸é\KHÁ¤º¸±³À°¿ø\Server\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1564898548.index
+\1_Servlet\src
+C:\Users\calls\OneDrive\¹ÙÅÁ È­¸é\KHÁ¤º¸±³À°¿ø\Server\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3070379726.index
+\2_JSP\src
+C:\Server\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1610655781.index
+\JSPproject\src
+C:\Users\calls\OneDrive\¹ÙÅÁ È­¸é\KHÁ¤º¸±³À°¿ø\Server\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2767313304.index
+\study2\src
+C:\Server\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1231995540.index
+\JSPproject\src
+C:\Server\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4169933519.index
+\study3\src
