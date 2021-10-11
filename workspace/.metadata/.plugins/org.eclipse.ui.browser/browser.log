@@ -763,3 +763,16 @@
 10월 10, 2021 20:58:36.05 [440:1628:1010/205836.050:ERROR:chrome_browser_main_extra_parts_metrics.cc(238)] crbug.com/1216328: Checking default browser status ended.
 10월 10, 2021 20:58:46.47 [440:5988:1010/205846.471:ERROR:database.cc(1761)] Passwords SQLite error: code 2067 errno 0: UNIQUE constraint failed: logins.origin_url, logins.username_element, logins.username_value, logins.password_element, logins.signon_realm sql: INSERT INTO logins (origin_url, action_url, username_element, username_value, password_element, password_value, submit_element, signon_realm, date_created, blacklisted_by_user, scheme, password_type, times_used, form_data, display_name, icon_url, federation_url, skip_zero_click, generation_upload_status, possible_username_pairs, id, date_last_used, moving_blocked_for, date_password_modified) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
 10월 10, 2021 21:01:29.76 [440:10776:1010/210129.767:ERROR:device_event_log_impl.cc(214)] [21:01:29.767] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+
+10월 11, 2021 15:56:22.54 NEW SESSION
+10월 11, 2021 15:56:22.54 기존 브라우저 세션에서 여는 중입니다.
+10월 11, 2021 15:56:24.70 [9408:2972:1011/155624.701:ERROR:chrome_browser_main_extra_parts_metrics.cc(228)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+10월 11, 2021 15:56:24.70 [9408:2972:1011/155624.701:ERROR:chrome_browser_main_extra_parts_metrics.cc(231)] crbug.com/1216328: Checking Bluetooth availability ended.
+10월 11, 2021 15:56:24.70 [9408:2972:1011/155624.701:ERROR:chrome_browser_main_extra_parts_metrics.cc(234)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+10월 11, 2021 15:56:24.75 [9408:2972:1011/155624.704:ERROR:chrome_browser_main_extra_parts_metrics.cc(238)] crbug.com/1216328: Checking default browser status ended.
+10월 11, 2021 15:56:24.75 [9408:1512:1011/155624.725:ERROR:device_event_log_impl.cc(214)] [15:56:24.726] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+10월 11, 2021 16:13:14.24 [11240:7356:1011/161314.244:ERROR:chrome_browser_main_extra_parts_metrics.cc(228)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+10월 11, 2021 16:13:14.24 [11240:7356:1011/161314.244:ERROR:chrome_browser_main_extra_parts_metrics.cc(231)] crbug.com/1216328: Checking Bluetooth availability ended.
+10월 11, 2021 16:13:14.24 [11240:7356:1011/161314.244:ERROR:chrome_browser_main_extra_parts_metrics.cc(234)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+10월 11, 2021 16:13:14.24 [11240:5636:1011/161314.249:ERROR:device_event_log_impl.cc(214)] [16:13:14.249] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+10월 11, 2021 16:13:14.25 [11240:7356:1011/161314.258:ERROR:chrome_browser_main_extra_parts_metrics.cc(238)] crbug.com/1216328: Checking default browser status ended.
