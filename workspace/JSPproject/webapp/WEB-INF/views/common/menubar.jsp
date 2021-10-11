@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" import="member.model.vo.Member"%>
+<%
+	// session 객체에 담긴 loginUser 정보를 변수에 담아두기
+	Member loginUser = (Member)session.getAttribute("loginUser");
+
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +14,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 <!-- 외부 스타일 시트 -->
 <link href="<%= request.getContextPath() %>/resources/css/menubar-style.css" rel="stylesheet">
+<%-- session에 담긴 message 있을 경우 alert 하는 script --%>
+<% if(session.getAttribute("message")!= null) { %>
+<script>
+	alert('<%= session.getAttribute("message") %>');
+</script>
+<% session.removeAttribute("message");
+	}
+%>
+
+
+
 </head>
 <body>
 <div class="wrapper">
@@ -19,8 +35,13 @@
 			<img class="logo" src="<%= request.getContextPath() %>/resources/images/logo.jpg">
 		</a>
 		<div class="btnArea">
-			<a href="#">회원가입</a>
+			<% if(loginUser == null) { %>
+			<a href="<%= request.getContextPath()%>/memberJoin">회원가입</a>
 			<a href="<%= request.getContextPath()%>/login">로그인</a>
+			<% } else { %>
+			<a href="<%= request.getContextPath()%>/memberModify">정보수정</a>|
+			<a href="<%= request.getContextPath()%>/logout">로그아웃</a>
+			<% } %>
 		</div>
 	</header>
 	<nav id="nav">
