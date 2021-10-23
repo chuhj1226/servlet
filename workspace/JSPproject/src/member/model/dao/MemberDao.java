@@ -1,5 +1,7 @@
 package member.model.dao;
 
+import static common.JDBCTemplate.close;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.Connection;
@@ -7,7 +9,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Properties;
-import static common.JDBCTemplate.close;
 
 import member.model.vo.Member;
 
@@ -86,8 +87,6 @@ public class MemberDao {
 			
 			result = pstmt.executeUpdate();
 			
-			
-			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally{
@@ -157,6 +156,52 @@ public class MemberDao {
 		}
 		
 		return updateMember;
+	}
+
+
+	public int updatePwd(Connection conn, int userNo, String userPwd, String newPwd) {
+		int result = 0;
+		PreparedStatement pstmt = null;
+		String sql = memberQuery.getProperty("updatePwd");
+		
+		try {
+			pstmt = conn.prepareStatement(sql);
+			
+			
+			pstmt.setString(1, newPwd);
+			pstmt.setInt(2, userNo);
+			pstmt.setString(3, userPwd);
+			
+			result = pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally {
+			close(pstmt);
+		}
+	
+		
+		return result;
+		
+	}
+
+
+	public int deleteAccount(Connection conn, int userNo) {
+		int result = 0;
+		PreparedStatement pstmt = null;
+		String sql = memberQuery.getProperty("deleteMember");
+		
+			try {
+				pstmt = conn.prepareStatement(sql);
+				pstmt.setInt(1, userNo);
+				
+				result = pstmt.executeUpdate();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}finally {
+				close(pstmt);
+			}
+			
+		return result;
 	}
 	
 }

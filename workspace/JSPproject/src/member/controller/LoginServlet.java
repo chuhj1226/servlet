@@ -16,7 +16,7 @@ import member.model.vo.Member;
 /**
  * Servlet implementation class LoginServlet
  */
-@WebServlet("/login")
+@WebServlet(name="LoginServlet", urlPatterns="/login")
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -46,7 +46,6 @@ public class LoginServlet extends HttpServlet {
 		
 		// 0. post 방식으로 submit 했을 경우 문자 인코딩 처리 필요하지만
 		//    로그인 시 전송 받는 값에는 한글 값이 없으므로 인코딩 처리 하지 않아도 무방함
-		//    
 		
 		// 1. 요청에 포함 된 id, pwd 값 추출
 		String userId = request.getParameter("userId");

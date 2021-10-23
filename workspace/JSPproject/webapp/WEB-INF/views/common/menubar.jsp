@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="member.model.vo.Member"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 	// session 객체에 담긴 loginUser 정보를 변수에 담아두기
 	Member loginUser = (Member)session.getAttribute("loginUser");
@@ -27,6 +28,8 @@
 
 </head>
 <body>
+<c:set var="contextPath" value="${ pageContext.servletContext.contextPath }"
+ scope="application"/>
 <div class="wrapper">
 	<header id="header">
 		<!-- 로고 이미지를 클릭하면 첫 화면으로 -->
@@ -47,9 +50,9 @@
 	<nav id="nav">
 		<ul>
 			<li><a href="<%= request.getContextPath() %>">HOME</a></li>
-			<li><a href="#">공지사항</a></li>
-			<li><a href="#">게시판</a></li>
-			<li><a href="#">사진게시판</a></li>
+			<li><a href="${ contextPath }/notice/list">공지사항</a></li>
+			<li><a href="${ contextPath }/board/list">게시판</a></li>
+			<li><a href="${ contextPath }/gallery/list">사진게시판</a></li>
 		</ul>
 	</nav>
 </div>

@@ -15,7 +15,7 @@ import member.model.vo.Member;
 /**
  * Servlet implementation class MemberJoinServlet
  */
-@WebServlet("/memberJoin")
+@WebServlet(name="MemberJoinServlet", urlPatterns="/memberJoin")
 public class MemberJoinServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -45,7 +45,7 @@ public class MemberJoinServlet extends HttpServlet {
 		// 요청을 통해 넘어온 정보 DB에 Insert 후 응답 화면
 		
 		// 1. 한글 값이 있을 경우 인코딩 처리
-		request.setCharacterEncoding("UTF-8");
+//		request.setCharacterEncoding("UTF-8");
 		
 		// 2. requset에 담긴 값 꺼내서 변수에 저장
 		String userId = request.getParameter("userId");

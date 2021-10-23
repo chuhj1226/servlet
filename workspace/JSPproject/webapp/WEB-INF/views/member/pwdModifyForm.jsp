@@ -56,6 +56,24 @@
 		cursor : pointer;
 	}
 </style>
+<% 
+	if(request.getAttribute("result") != null) {
+		// 비밀번호 변경 요청을 수행하고 돌아온 상황일 때 (처음 팝업창을 여는 상황은 result가 null)
+		if(request.getAttribute("result").equals("success"))	{	
+			// 비밀번호 변경에 성공
+%>
+<script>
+	alert("성공적으로 비밀번호를 변경하였습니다.");
+	window.close();
+</script>
+<% } else { // 비밀번호 변경에 실패 %>
+<script>
+alert("비밀번호에 실패하였습니다. 다시확인해주세요.");
+</script>
+<%		}
+	}
+%>
+
 </head>
 <body>
 	<div class="outer">

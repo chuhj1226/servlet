@@ -37,6 +37,7 @@
 		</div>
 	</div>
 	
-	
+	<!-- 쿠키 사용하여 아이디 기억하기 기능 외부 파일로 작성하여 하단에 넣기 -->
+	<script src="<%= request.getContextPath() %>/resources/js/rememberUserId.js"></script>
 </body>
 </html>

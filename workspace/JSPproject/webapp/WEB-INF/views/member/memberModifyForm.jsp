@@ -106,7 +106,6 @@
                 } else {
                    address = new String[] {"", "", ""};
                 }
-                out.print(Arrays.toString(address));
              %>
             <h4>우편번호</h4>
             <span class="input_area"><input type="text" name="address" class="postcodify_postcode5" 
@@ -159,7 +158,8 @@
             </span>
             <div class="btnArea">
                <button id="updateBtn">수정하기</button>
-               <button id="deleteBtn" type="button">탈퇴하기</button>
+               <button id="deleteBtn" type="button"
+               onclick="confirmAccountDelete();">탈퇴하기</button>
             </div>
          </form>
       </div>
@@ -185,7 +185,7 @@
       // 비밀번호 변경 팝업창 호출
       function openPopup(url, title, width, height){
          
-         var left = (document.body.clientWidth/2)-(width/2);
+         var left = (document.body.clientWidth/2) - (width/2);
          left += window.screenLeft; //듀얼모니터
          var top = (screen.availHeight/2) - (height/2);
          
@@ -194,9 +194,11 @@
          
       }
       
-      
-      
-      
+      function confirmAccountDelete(){
+    	  if(confirm("정말로 탈퇴하시겠습니까?"))
+    		  location.href='<%=request.getContextPath()%>/accountDelete';
+      }
+    
    </script>
 </body>
 </html>

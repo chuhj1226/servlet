@@ -43,8 +43,8 @@ public class MemberModifyServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// 요청에 넘어온 수정할 회원 정보를 DB에서 update 후 화면 응답
 		
-		// 1. 한글 값 인코딩
-		request.setCharacterEncoding("UTF-8");
+		// 1. 한글 값 인코딩(필터 적용 후 주석)
+//		request.setCharacterEncoding("UTF-8");
 		
 		// 2. 회원정보 수정에 필요한 값 추출
 		int userNo = ((Member)request.getSession().getAttribute("loginUser")).getUserNo();
